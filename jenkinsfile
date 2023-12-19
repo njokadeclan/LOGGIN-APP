@@ -10,7 +10,7 @@ pipeline{
                 git branch: 'main', url: 'https://github.com/njokadeclan/LOGGIN-APP.git'
             }
         }
-        stage('Unit Test'){
+        stage('Unit Test') {
 
             steps{
                 sh'mvn test'
