@@ -1,0 +1,14 @@
+pipeline{
+
+    agent any
+
+    stages{
+
+        stage('Continuou Download') {
+
+            steps{
+                git branch: 'main', url: 'https://github.com/njokadeclan/LOGGIN-APP.git'
+            }
+        }
+    }
+}
